@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="nl-BE">
   <head>
     <meta charset="UTF-8" />
@@ -5,30 +6,24 @@
     <meta name="keywords" content="HTML,CSS,JavaScript" />
     <meta name="author" content="Mr Apti Dzhaner" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+    <!-- dit is voor scroll to top icon te laten werken -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link
-      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
-      rel="stylesheet"
-    />
-
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     ></script>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Portfolio</title>
+    <title>Portfolio - Contact</title>
   </head>
-  <body class="m-0 border-0 bd-example m-0 border-0">
+  <body class="d-flex flex-column min-vh-100">
     <header>
       <nav class="navbar navbar-dark color-site-dark sticky-top">
         <div class="container-fluid">
@@ -84,5 +79,67 @@
         </div>
       </nav>
     </header>
+
+    <main class="flex-grow-1">
+      <form class="m-5 row g-3 form-panel p-4">
+        <div class="col-md-6">
+          <label for="inputNaam" class="form-label">Voornaam</label>
+          <input
+            type="text"
+            class="form-control rounded-4"
+            id="inputNaam"
+            name="first_name"
+            placeholder="Delano"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputAchternaam" class="form-label">Achternaam</label>
+          <input
+            type="text"
+            class="form-control rounded-4"
+            id="inputAchternaam"
+            name="last_name"
+            placeholder="Bollens"
+          />
+        </div>
+
+        <div class="col-12">
+          <label for="emailFormControlInput" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control rounded-4"
+            id="emailFormControlInput"
+            name="email"
+            placeholder="naam@voorbeeld.be"
+          />
+        </div>
+
+        <div class="col-12">
+          <label for="FormControlBericht" class="form-label">Bericht</label>
+          <textarea
+            class="form-control rounded-4"
+            id="FormControlBericht"
+            name="message"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <div class="col-12">
+          <button type="submit" class="btn color-site-blue rounded-4">
+            Verzenden
+          </button>
+        </div>
+      </form>
+    </main>
+    <aside>
+      <div class="arrow-btn">
+        <a href="#" aria-label="Scroll naar boven"
+          ><span class="bi bi-arrow-up"></span
+        ></a>
+      </div>
+    </aside>
+    <footer class="color-site-dark mt-auto p-4">
+      <p class="text-center mb-0">Dzhaner Apti &copy; 2025</p>
+    </footer>
   </body>
 </html>

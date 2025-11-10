@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="nl-BE">
   <head>
     <meta charset="UTF-8" />
@@ -5,30 +6,24 @@
     <meta name="keywords" content="HTML,CSS,JavaScript" />
     <meta name="author" content="Mr Apti Dzhaner" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Bootstrap Icons -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link
-      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
-      rel="stylesheet"
-    />
-
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     ></script>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Portfolio</title>
+    <title>Portfolio - over mezelf</title>
   </head>
-  <body class="m-0 border-0 bd-example m-0 border-0">
+  <body class="d-flex flex-column min-vh-100">
     <header>
       <nav class="navbar navbar-dark color-site-dark sticky-top">
         <div class="container-fluid">
@@ -84,5 +79,78 @@
         </div>
       </nav>
     </header>
+    <main class="flex-grow-1">
+      <aside>
+        <div class="arrow-btn">
+          <a href="#" aria-label="Scroll naar boven"
+            ><span class="bi bi-arrow-up"></span
+          ></a>
+        </div>
+      </aside>
+      <section class="p-5 mt-3">
+        <article>
+          <div class="container">
+            <div class="row g-4">
+              <div class="col-12 col-md-6">
+                <img
+                  src="assets/images/persoonlijk_foto.jpg"
+                  class="img-fluid rounded"
+                  alt="persoonlijk foto"
+                />
+              </div>
+              <div class="col-12 col-md-6">
+                <p class="text-start">
+                  Hallo, Mijn naam is
+                  <span class="color-text-blue"
+                    ><strong>Dzhaner Apti</strong></span
+                  >, ik ben 21 jaar en ik heb een grote passie voor
+                  <span class="color-text-blue"><strong>IT.</strong></span>
+                  Vooral
+                  <span class="color-text-blue"
+                    ><strong>netwerken en cybersecurity</strong></span
+                  >
+                  spreken me sterk aan, omdat ik graag werk rond het beveiligen
+                  en optimaliseren van systemen. Ik ben iemand die
+                  <span class="color-text-blue"
+                    ><strong>leergierig en analytisch</strong></span
+                  >
+                  te werk gaat en steeds op zoek is naar nieuwe uitdagingen om
+                  mijn kennis in de praktijk toe te passen.
+                </p>
+
+                <div class="mt-4">
+                  <p class="mb-3">
+                    U kunt mij contacteren via de volgende manieren:
+                  </p>
+                  <div class="d-flex gap-3">
+                    <a
+                      href="contact.html"
+                      class="btn color-site-blue btn-lg"
+                      title="Email"
+                      aria-label="Email"
+                    >
+                      <i class="bi bi-envelope-fill fs-2"></i>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/dzhaner-apti-a41661368/"
+                      target="_blank"
+                      class="btn color-site-blue btn-lg"
+                      title="LinkedIn"
+                      aria-label="LinkedIn"
+                      rel="noopener"
+                    >
+                      <i class="bi bi-linkedin fs-2"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="color-site-dark mt-auto p-4">
+      <p class="text-center mb-0">Dzhaner Apti &copy; 2025</p>
+    </footer>
   </body>
 </html>
