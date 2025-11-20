@@ -81,7 +81,13 @@
     </header>
 
     <main class="flex-grow-1">
-      <form class="m-5 row g-3 form-panel p-4">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        data-netlify-recaptcha="true"
+        class="m-5 row g-3 form-panel p-4"
+      >
         <div class="col-md-6">
           <label for="inputNaam" class="form-label">Voornaam</label>
           <input
@@ -90,6 +96,7 @@
             id="inputNaam"
             name="first_name"
             placeholder="Delano"
+            required
           />
         </div>
         <div class="col-md-6">
@@ -100,6 +107,7 @@
             id="inputAchternaam"
             name="last_name"
             placeholder="Bollens"
+            required
           />
         </div>
 
@@ -111,6 +119,7 @@
             id="emailFormControlInput"
             name="email"
             placeholder="naam@voorbeeld.be"
+            required
           />
         </div>
 
@@ -121,7 +130,12 @@
             id="FormControlBericht"
             name="message"
             rows="3"
+            required
           ></textarea>
+        </div>
+
+        <div class="col-12">
+          <div data-netlify-recaptcha="true"></div>
         </div>
 
         <div class="col-12">
