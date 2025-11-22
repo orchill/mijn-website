@@ -6,89 +6,55 @@
     <meta name="keywords" content="HTML,CSS,JavaScript" />
     <meta name="author" content="Mr Apti Dzhaner" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-    <!-- dit is voor scroll to top icon te laten werken -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    ></script>
     <link rel="stylesheet" href="css/reset.css" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <!-- dit is voor scroll to top icon te laten werken -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="css/style.css" />
-    <title>Portfolio - Project</title>
+    <title>Project</title>
   </head>
+
   <body class="d-flex flex-column min-vh-100">
     <header>
-      <nav class="navbar navbar-dark color-site-dark sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-dark color-site-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"
-            ><img src="assets/images/logo.png" width="75px" height="75px"
-          /></a>
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png" width="75" height="75" alt="Logo" />
+          </a>
+
+          <!-- toont een button bij kleinere schermen. en maakt het navbar een dropdown menu -->
           <button
-            class="navbar-toggler"
+            class="navbar-toggler border border-2 border-primary"
             type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasDarkNavbar"
-            aria-controls="offcanvasDarkNavbar"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div
-            class="offcanvas offcanvas-end color-site-dark"
-            tabindex="-1"
-            id="offcanvasDarkNavbar"
-            aria-labelledby="offcanvasDarkNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                Menu
-              </h5>
-              <button
-                type="button"
-                class="btn-close btn-close-white"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="portfolio.html">Projecten</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="naam.html">Over mezelf</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link color-site-grey-text" href="index.html">Home</a>
+              <a class="nav-link color-site-grey-text" href="naam.html">Over mezelf</a>
+              <a class="nav-link color-site-grey-text" href="portfolio.html">Projecten</a>
+              <a class="nav-link color-site-grey-text" href="contact.html">Contact</a>
             </div>
           </div>
         </div>
       </nav>
     </header>
+
     <main class="flex-grow-1">
-      <aside>
-        <div class="arrow-btn">
-          <a href="#" aria-label="Scroll naar boven"
-            ><span class="bi bi-arrow-up"></span
-          ></a>
-        </div>
-      </aside>
+      <div class="arrow-btn">
+        <a href="#" aria-label="Scroll naar boven"><span class="bi bi-arrow-up"></span></a>
+      </div>
+
       <section class="container-fluid px-4 px-md-5 my-5">
         <article>
           <div class="row mb-4">
@@ -99,6 +65,7 @@
               </h1>
             </div>
           </div>
+
           <div class="row g-4">
             <div class="col-12 col-md-6 col-lg-5">
               <img
@@ -112,27 +79,25 @@
                 alt="Project 1 screenshots"
               />
             </div>
+
             <div class="col-12 col-md-6 col-lg-7">
               <h2>Projectomschrijving</h2>
               <p>
-                Dit was een volledig rebranding project dat ik in 2023 had
-                gemaakt voor een klant. dit bevat een nieuwe logo, website,
-                advertentie
+                Dit was een volledig rebrandingproject dat ik in 2023 heb uitgewerkt voor een klant. Het project
+                omvatte een complete vernieuwing van hun visuele identiteit, inclusief het ontwerpen van een nieuw logo, het
+                bouwen van een moderne en gebruiksvriendelijke website, en het creëren van passende advertentiematerialen. Het
+                doel was om een sterkere, herkenbare en meer professionele uitstraling te ontwikkelen die beter aansloot bij
+                hun doelgroep en bedrijfswaarden. Tijdens dit project heb ik nauw samengewerkt met de klant om hun visie te
+                vertalen naar een consistente en aantrekkelijke merkidentiteit.
               </p>
 
               <h3 class="mt-4">Kenmerken</h3>
               <ul>
                 <li>
-                  <span class="color-text-blue"
-                    ><strong>Cross-browser compatibiliteit</strong></span
-                  >
+                  <span class="color-text-blue"><strong>Cross-browser compatibiliteit</strong></span>
                 </li>
                 <li>
-                  <span class="color-text-blue"
-                    ><strong
-                      >Responsive design (mobiel-vriendelijk)</strong
-                    ></span
-                  >
+                  <span class="color-text-blue"><strong>Responsive design (mobiel-vriendelijk)</strong></span>
                 </li>
                 <li>
                   <span class="color-text-blue"><strong>1 thema</strong></span>
@@ -148,30 +113,55 @@
                   <span class="color-text-blue"><strong>CSS3</strong></span>
                 </li>
                 <li>
-                  <span class="color-text-blue"
-                    ><strong>Bootstrap 5</strong></span
-                  >
+                  <span class="color-text-blue"><strong>Bootstrap 5</strong></span>
                 </li>
                 <li>
-                  <span class="color-text-blue"
-                    ><strong>JavaScript</strong></span
-                  >
+                  <span class="color-text-blue"><strong>JavaScript</strong></span>
                 </li>
               </ul>
 
+              <h3 class="mt-4">Wat waren de verwachtingen?</h3>
+              <p>
+                Een volledige rebranding voor het bedrijf, inclusief een volledig werkende website en een complete vernieuwde
+                huisstijl. Daarnaast heb ik ook een promotievideo gemaakt, samen met posters en kant-en-klare Instagram-posts die
+                direct gepubliceerd kunnen worden. Het resultaat is een consistent en professioneel merkbeeld dat op alle kanalen
+                gebruikt kan worden.
+              </p>
+
               <h3 class="mt-4">Wat heb ik geleerd?</h3>
               <p>
-                Op tijd plannen van phases bij rebranding, als je niet op tijd
-                bent met deadlines. geraak je de weg kwijt en moet je extra
-                werken om op tijd klaar te geraken.
+                Het op tijd plannen van de verschillende fases binnen een rebranding is essentieel. Wanneer deadlines niet worden
+                gehaald, raak je al snel het overzicht kwijt en verschuiven taken naar elkaar toe. Dit kan ervoor zorgen dat je onder
+                druk komt te staan en uiteindelijk extra werk moet verrichten om alles alsnog tijdig af te krijgen. Een goede
+                planning helpt om structuur te behouden, problemen vroeg te herkennen en elke stap van het proces zorgvuldig uit te
+                voeren, zodat de kwaliteit behouden blijft en het eindresultaat sterk en consistent is.
               </p>
             </div>
           </div>
         </article>
+
+        <aside class="mt-4 d-flex justify-content-end" aria-label="Contact methodes">
+          <div class="d-flex gap-3">
+            <a href="contact.html" class="btn color-site-blue btn-lg" title="Email" aria-label="Email">
+              <i class="bi bi-envelope-fill fs-2"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/dzhaner-apti-a41661368/"
+              target="_blank"
+              class="btn color-site-blue btn-lg"
+              title="LinkedIn"
+              aria-label="LinkedIn"
+              rel="noopener"
+            >
+              <i class="bi bi-linkedin fs-2"></i>
+            </a>
+          </div>
+        </aside>
       </section>
     </main>
+
     <footer class="color-site-dark mt-auto p-4">
-      <p class="text-center mb-0">Dzhaner Apti &copy; 2025</p>
+      <p class="text-center mb-0 color-site-grey-text">Dzhaner Apti &copy; <span id="year"></span></p>
     </footer>
   </body>
 </html>

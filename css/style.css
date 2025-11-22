@@ -1,9 +1,14 @@
 .color-site-dark {
   background-color: #121212 !important;
-  color: #e5e5e5 !important;
 }
-.color-site-grey {
+.color-text-dark {
+  color: #121212 !important;
+}
+.color-site-grey-bg {
   background-color: #e5e5e5 !important;
+}
+.color-site-grey-text {
+  color: #e5e5e5 !important;
 }
 .color-site-blue {
   background-color: #3b82f6 !important;
@@ -11,6 +16,22 @@
 }
 .color-text-blue {
   color: #3b82f6 !important;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link.active:focus,
+.navbar .nav-link.active:hover,
+.navbar-nav .nav-link.active[aria-current="page"] {
+  color: #3b82f6 !important;
+}
+/** border verschijnt alleen als je een border toevoegt naar button**/
+.navbar-toggler.bordered {
+  border: 2px solid #3b82f6;
+  background-color: #121212;
+}
+.navbar-toggler.bordered:focus,
+.navbar-toggler.bordered:hover {
+  border-color: #3b82f6;
 }
 html {
   scroll-behavior: smooth;
@@ -45,10 +66,12 @@ html {
 .hero {
   position: relative;
   width: 100%;
-  height: 60vh;
-  min-height: 320px;
+  height: 50vh;
+  min-height: 260px;
   overflow: hidden;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-img {
@@ -59,7 +82,7 @@ html {
   height: 100%;
   object-fit: cover;
   transform: translate(-50%, -50%) scale(1.05);
-  filter: blur(3px) contrast(0.95);
+  filter: blur(5px) contrast(0.95);
   will-change: transform, filter;
 }
 
@@ -74,8 +97,8 @@ html {
 .hero-content {
   position: relative;
   z-index: 2;
-  margin: 4rem;
-  padding: 1rem;
+  margin: 0; 
+  padding: 1rem 1.25rem;
   color: #e5e5e5 !important;
 }
 
@@ -85,8 +108,8 @@ html {
 
 @media (max-width: 576px) {
   .hero {
-    height: 44vh;
-    min-height: 260px;
+    height: 40vh;
+    min-height: 220px;
   }
   .hero-img {
     filter: blur(2px);
@@ -121,7 +144,7 @@ html {
 }
 
 article p {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   line-height: 1.6;
 }
 
@@ -160,4 +183,17 @@ article ul li {
   color: #e5e5e5 !important;
   transform: scale(1.05) translateY(-5px);
   box-shadow: 0 8px 16px rgba(59, 130, 246, 0.3);
+}
+#map {
+  height: 180px;
+  max-height: 260px;
+  width: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+@media (max-width: 576px) {
+  #map { height: 140px; }
+}
+@media (min-width: 768px) {
+  #map { height: 220px; }
 }

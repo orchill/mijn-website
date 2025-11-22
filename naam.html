@@ -6,151 +6,146 @@
     <meta name="keywords" content="HTML,CSS,JavaScript" />
     <meta name="author" content="Mr Apti Dzhaner" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    ></script>
     <link rel="stylesheet" href="css/reset.css" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="css/style.css" />
-    <title>Portfolio - over mezelf</title>
+    <title>Over mezelf</title>
   </head>
+
   <body class="d-flex flex-column min-vh-100">
     <header>
-      <nav class="navbar navbar-dark color-site-dark sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-dark color-site-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"
-            ><img src="assets/images/logo.png" width="75px" height="75px"
-          /></a>
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png" width="75" height="75" alt="Logo" />
+          </a>
+
+          <!-- toont een button bij kleinere schermen. en maakt het navbar een dropdown menu -->
           <button
-            class="navbar-toggler"
+            class="navbar-toggler border border-2 border-primary"
             type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasDarkNavbar"
-            aria-controls="offcanvasDarkNavbar"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div
-            class="offcanvas offcanvas-end color-site-dark"
-            tabindex="-1"
-            id="offcanvasDarkNavbar"
-            aria-labelledby="offcanvasDarkNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                Menu
-              </h5>
-              <button
-                type="button"
-                class="btn-close btn-close-white"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="portfolio.html">Projecten</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="naam.html">Over mezelf</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link color-site-grey-text" href="index.html">Home</a>
+              <a class="nav-link active color-site-grey-text" aria-current="page" href="naam.html">Over mezelf</a>
+              <a class="nav-link color-site-grey-text" href="portfolio.html">Projecten</a>
+              <a class="nav-link color-site-grey-text" href="contact.html">Contact</a>
             </div>
           </div>
         </div>
       </nav>
     </header>
-    <main class="flex-grow-1">
-      <aside>
-        <div class="arrow-btn">
-          <a href="#" aria-label="Scroll naar boven"
-            ><span class="bi bi-arrow-up"></span
-          ></a>
-        </div>
-      </aside>
-      <section class="p-5 mt-3">
-        <article>
-          <div class="container">
-            <div class="row g-4">
-              <div class="col-12 col-md-6">
-                <img
-                  src="assets/images/persoonlijk_foto.jpg"
-                  class="img-fluid rounded"
-                  alt="persoonlijk foto"
-                />
-              </div>
-              <div class="col-12 col-md-6">
-                <p class="text-start">
-                  Hallo, Mijn naam is
-                  <span class="color-text-blue"
-                    ><strong>Dzhaner Apti</strong></span
-                  >, ik ben 21 jaar en ik heb een grote passie voor
-                  <span class="color-text-blue"><strong>IT.</strong></span>
-                  Vooral
-                  <span class="color-text-blue"
-                    ><strong>netwerken en cybersecurity</strong></span
-                  >
-                  spreken me sterk aan, omdat ik graag werk rond het beveiligen
-                  en optimaliseren van systemen. Ik ben iemand die
-                  <span class="color-text-blue"
-                    ><strong>leergierig en analytisch</strong></span
-                  >
-                  te werk gaat en steeds op zoek is naar nieuwe uitdagingen om
-                  mijn kennis in de praktijk toe te passen.
-                </p>
 
-                <div class="mt-4">
-                  <p class="mb-3">
-                    U kunt mij contacteren via de volgende manieren:
-                  </p>
-                  <div class="d-flex gap-3">
-                    <a
-                      href="contact.html"
-                      class="btn color-site-blue btn-lg"
-                      title="Email"
-                      aria-label="Email"
-                    >
-                      <i class="bi bi-envelope-fill fs-2"></i>
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/dzhaner-apti-a41661368/"
-                      target="_blank"
-                      class="btn color-site-blue btn-lg"
-                      title="LinkedIn"
-                      aria-label="LinkedIn"
-                      rel="noopener"
-                    >
-                      <i class="bi bi-linkedin fs-2"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <main class="flex-grow-1">
+      <div class="arrow-btn">
+        <a href="#" aria-label="Scroll naar boven"><span class="bi bi-arrow-up"></span></a>
+      </div>
+
+      <article class="p-4">
+        <div class="row flex-lg-row-reverse align-items-center ms-2 g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="assets/images/persoonlijk_foto.jpg "
+              class="d-block mx-lg-auto img-fluid rounded"
+              alt="persoonlijk foto"
+              width="500"
+              height="400"
+              loading="lazy"
+            />
           </div>
-        </article>
-      </section>
+
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Over mezelf</h1>
+
+            <p class="lead">
+              Hallo! Mijn naam is <span class="color-text-blue fw-bold">Dzhaner Apti</span>, ik ben 21 jaar en geboren in
+              Bulgarije. Sinds mijn zevende woon ik in België, en die achtergrond heeft een grote rol gespeeld in wie ik
+              vandaag ben. Opgroeien tussen twee culturen heeft mij een brede kijk op de wereld gegeven, en het heeft mij
+              geholpen om flexibel, nieuwsgierig en probleemoplossend te worden. Die eigenschappen neem ik elke dag mee
+              in mijn ontwikkeling binnen de IT-wereld.
+
+              Mijn passie voor technologie begon al op jonge leeftijd. Ik was altijd gefascineerd door hoe apparaten met
+              elkaar verbonden zijn, hoe gegevens door een netwerk bewegen en hoe digitale systemen samenwerken. Naarmate ik
+              ouder werd, werd die interesse steeds specifieker, vooral richting
+              <span class="color-text-blue fw-bold">cybersecurity</span>,
+              <span class="color-text-blue fw-bold">network security</span> en
+              <span class="color-text-blue fw-bold">routing</span>. Wat mij daarin het meest aanspreekt, is het analyseren
+              van netwerkstructuren, het ontdekken van mogelijke kwetsbaarheden en het opbouwen van veilige omgevingen die
+              betrouwbaar en efficiënt functioneren.
+
+              Routing en <span class="color-text-blue fw-bold">netwerkoptimalisatie</span> zijn voor mij meer dan technische
+              termen. Ze representeren de logica, structuur en nauwkeurigheid die ik zo interessant vind in IT. Ik geniet
+              ervan om uit te zoeken hoe verkeer door een netwerk beweegt, waar bottlenecks ontstaan en hoe je een systeem
+              slimmer en veiliger kan maken. De combinatie van puzzelen, analyseren en beveiligen past perfect bij hoe ik
+              denk en werk.
+
+              Omdat IT een vakgebied is dat constant evolueert, besteed ik veel tijd aan bijleren. Ik volg actief nieuwe
+              tools, methodes en trends, zodat ik altijd op de hoogte blijf van wat er verandert in cybersecurity en
+              netwerkbeheer. Ik vind het belangrijk om mezelf te blijven uitdagen, zowel technisch als persoonlijk.
+
+              Mijn doel is om stap voor stap te groeien tot een
+              <span class="color-text-blue fw-bold">betrouwbare IT-professional</span> die organisaties helpt bij het bouwen
+              van veilige, efficiënte en toekomstbestendige netwerken. Met mijn motivatie, leergierigheid en technische
+              interesse wil ik een verschil maken binnen het domein waar ik zo gepassioneerd over ben.
+            </p>
+            <section>
+              <h2 class="mb-3 fw-bold">Mijn competenties</h2>
+               <ul class="list-unstyled row g-3">
+                  <li class="col-6 col-md-4">Python ⭐⭐⭐</li>
+                  <li class="col-6 col-md-4">Web-Prog ⭐⭐⭐</li>
+                  <li class="col-6 col-md-4">TypeScript ⭐⭐</li>
+                  <li class="col-6 col-md-4">Netwerken ⭐⭐⭐</li>
+                  <li class="col-6 col-md-4">Routeren ⭐⭐⭐</li>
+                  <li class="col-6 col-md-4">Subnetten ⭐⭐⭐</li>
+              </ul>
+            </section>
+            <section>
+              <h2 class="mb-3 fw-bold">Mijn hobbies</h2>
+               <ul class="list-unstyled row g-3">
+                  <li class="col-6 col-md-4">Gamen</li>
+                  <li class="col-6 col-md-4">Lezen</li>
+                  <li class="col-6 col-md-4">Shoppen</li>
+                  <li class="col-6 col-md-4">Piano</li>
+              </ul>
+            </section>
+            <aside class="mt-4" aria-label="Contact methods">
+              <p class="mb-3 fw-bold">U kunt mij contacteren via de volgende manieren:</p>
+              <div class="d-flex gap-3">
+                <a href="contact.html" class="btn color-site-blue btn-lg" title="Email" aria-label="Email">
+                  <i class="bi bi-envelope-fill fs-2"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/dzhaner-apti-a41661368/"
+                  target="_blank"
+                  class="btn color-site-blue btn-lg"
+                  title="LinkedIn"
+                  aria-label="LinkedIn"
+                  rel="noopener"
+                >
+                  <i class="bi bi-linkedin fs-2"></i>
+                </a>
+              </div>
+            </aside>
+          </div>
+        </div>
+  </article>
     </main>
+
     <footer class="color-site-dark mt-auto p-4">
-      <p class="text-center mb-0">Dzhaner Apti &copy; 2025</p>
+      <p class="text-center mb-0 color-site-grey-text">Dzhaner Apti &copy; <span id="year"></span></p>
     </footer>
   </body>
 </html>
