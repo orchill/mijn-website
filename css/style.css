@@ -24,15 +24,7 @@
 .navbar-nav .nav-link.active[aria-current="page"] {
   color: #3b82f6 !important;
 }
-/** border verschijnt alleen als je een border toevoegt naar button**/
-.navbar-toggler.bordered {
-  border: 2px solid #3b82f6;
-  background-color: #121212;
-}
-.navbar-toggler.bordered:focus,
-.navbar-toggler.bordered:hover {
-  border-color: #3b82f6;
-}
+
 html {
   scroll-behavior: smooth;
 }

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Web tutorials" />
+    <meta name="keywords" content="HTML,CSS,JavaScript" />
+    <meta name="author" content="Mr Apti Dzhaner" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <!-- dit is voor scroll to top icon te laten werken -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Project</title>
+  </head>
+
+  <body class="d-flex flex-column min-vh-100">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark color-site-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png" width="75" height="75" alt="Logo" />
+          </a>
+
+          <!-- toont een button bij kleinere schermen. en maakt het navbar een dropdown menu -->
+          <button
+            class="navbar-toggler border border-2 border-primary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link color-site-grey-text" href="index.html">Home</a>
+              <a class="nav-link color-site-grey-text" href="naam.html">Over mezelf</a>
+              <a class="nav-link color-site-grey-text" href="portfolio.html">Projecten</a>
+              <a class="nav-link color-site-grey-text" href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-grow-1">
+      <div class="arrow-btn">
+        <a href="#" aria-label="Scroll naar boven"><span class="bi bi-arrow-up"></span></a>
+      </div>
+
+      <section class="container-fluid px-4 px-md-5 my-5">
+        <article>
+          <div class="row mb-4">
+            <div class="col-12">
+              <h1 class="text-start">
+                <span class="color-text-blue"><strong>Project 4:</strong></span>
+                Home - Server 2025
+              </h1>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-5">
+              <figure>
+                <img
+                  class="img-fluid rounded-3 mb-4"
+                  src="assets/images/sfeer_foto_2.jpg"
+                  alt="Project 4 screenshots"
+                />
+                <img
+                  class="img-fluid rounded-3 d-block mx-auto"
+                  src="assets/images/sfeer_foto_3.jpg"
+                  alt="Project 4 screenshots"
+                />
+                <figcaption><span class="color-text-blue">bron: Pexels</span></figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-7">
+              <h2>Projectomschrijving</h2>
+              <p>
+              Dit project is een persoonlijk hobbyproject waarin ik in 2025 ben begonnen met het opzetten, configureren en uitbreiden van mijn eigen home server.
+              Het doel was om een stabiel, veilig en volledig zelfgehost systeem te creëren waarop ik verschillende services kan draaien, zoals media-servers, monitoringtools, automatisaties en personal utilities.
+              Tijdens het proces heb ik de server stap voor stap opgebouwd:
+              ik heb services gecontaineriseerd, de netwerkinstellingen geoptimaliseerd en een duidelijke mappenstructuur en configuratiebeheer opgezet. Daarnaast heb ik gewerkt met verschillende tools om de server overzichtelijk, uitbreidbaar en betrouwbaar te houden.
+              Dit home-serverproject gaf me de ruimte om te experimenteren met nieuwe technologieën, veilige configuraties en automatisaties.
+              Het eindresultaat is een flexibele, stabiele en schaalbare omgeving die ik voortdurend blijf uitbreiden naarmate mijn behoeften groeien.
+              </p>
+
+              <h3 class="mt-4">Kenmerken</h3>
+              <ul>
+                <li>
+                  <span class="color-text-blue"><strong>24/7 operationeel en stabiel systeem</strong></span>
+                </li>
+                <li>
+                  <span class="color-text-blue"><strong>Ondersteunt meerdere self-hosted services tegelijk.</strong></span>
+                </li>
+                <li>
+                  <span class="color-text-blue"><strong>Eenvoudig te beheren en automatiseren via dashboards en scripts.</strong></span>
+                </li>
+              </ul>
+
+              <h3 class="mt-4">Gebruikte technologieën</h3>
+              <ul>
+                <li>
+                  <span class="color-text-blue"><strong>Linux</strong></span>
+                </li>
+                <li>
+                  <span class="color-text-blue"><strong>Docker</strong></span>
+                </li>
+                <li>
+                  <span class="color-text-blue"><strong>Jellyfin</strong></span>
+                </li>
+              </ul>
+
+              <h3 class="mt-4">Wat waren de verwachtingen?</h3>
+              <p>
+               Bij de start van dit project wilde ik vooral mijn basiskennis rond servers en self-hosting opfrissen.
+               Ik wilde leren hoe je een moderne home-serveromgeving opbouwt met gecontaineriseerde services, reverse proxies en veilige toegangsinstellingen.
+               Het project moest vooral een leeromgeving zijn waarin ik nieuwe services kon testen, infrastructuurtechnieken kon oefenen en mijn kennis van system administration verder kon uitbreiden.
+              </p>
+
+              <h3 class="mt-4">Wat heb ik geleerd?</h3>
+              <p>
+               Tijdens dit project heb ik veel geleerd over het opzetten en beheren van een zelfgehoste serveromgeving. Ik ontdekte hoe belangrijk het is om services goed te isoleren, bijvoorbeeld via containers, en hoe je een stabiele en betrouwbare infrastructuur opbouwt die 24/7 kan draaien.
+               Daarnaast heb ik inzicht gekregen in netwerkconfiguraties, beveiliging en toegangsbeheer, zoals het correct instellen van firewalls en veilige authenticatie. Ook heb ik ervaren hoe waardevol monitoring en logging zijn om problemen vroegtijdig op te sporen en de server soepel te laten functioneren.
+              Tot slot heeft dit project mijn vaardigheden in automatisering, systeembeheer en het integreren van meerdere services verder ontwikkeld, waardoor ik nu efficiënter en gestructureerder kan werken aan self-hosted oplossingen.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <aside class="mt-4 d-flex justify-content-end" aria-label="Contact methodes">
+          <div class="d-flex gap-3">
+            <a href="contact.html" class="btn color-site-blue btn-lg" title="Email" aria-label="Email">
+              <i class="bi bi-envelope-fill fs-2"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/dzhaner-apti-a41661368/"
+              target="_blank"
+              class="btn color-site-blue btn-lg"
+              title="LinkedIn"
+              aria-label="LinkedIn"
+              rel="noopener"
+            >
+              <i class="bi bi-linkedin fs-2"></i>
+            </a>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="color-site-dark mt-auto p-4">
+      <p class="text-center mb-0 color-site-grey-text">Dzhaner Apti &copy; <span id="year"></span></p>
+    </footer>
+  </body>
+</html>
